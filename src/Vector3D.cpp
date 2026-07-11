@@ -59,12 +59,12 @@ Vector3D& Vector3D::operator=(Vector3D&& other) noexcept {
     return *this;
 }
 
-// Getters (with a safety check added)
+// Getters 
 double Vector3D::getX() const { return coords ? coords[0] : 0.0; }
 double Vector3D::getY() const { return coords ? coords[1] : 0.0; }
 double Vector3D::getZ() const { return coords ? coords[2] : 0.0; }
 
-// Setters (with a safety check added)
+// Setters 
 void Vector3D::setX(double x) { if (coords) coords[0] = x; }
 void Vector3D::setY(double y) { if (coords) coords[1] = y; }
 void Vector3D::setZ(double z) { if (coords) coords[2] = z; }
